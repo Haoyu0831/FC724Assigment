@@ -1,0 +1,8 @@
+ Name: Haoyu Zhang,
+ P Number: P436575,
+ Email: 1030322488@qq.com,
+ Grade: 100,
+ Overall Satisfication: excellent,
+ Favorite Subject: FC-723 Programming Theory,
+ Suggestion: a,
+ Recommendation: a

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <!-- Link to normalize.css for cross-browser consistency -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <!-- Link to my_css.css file for custom styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing the Alfa Slab One font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Main container for the page content -->
+    <div class="container">
+        <!-- Box for the logo -->
+        <div class="box box-one">
+            <!-- Logo image -->
+            <img class="logo" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="">
+        </div> 
+        <!-- Box for navigation links -->
+        <div class="box box-two">
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <!-- Link to the Information page -->
+                    <li><a href="/information">Information Page</a></li>
+                    <!-- Link to the Data Collection page -->
+                    <li><a href="/data_collection">Data Collection Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Main content section -->
+    <div>
+        <div>
+            <!-- Background image -->
+            <img class="background" src="{{ url_for('static', filename='images/background.jpg') }}" alt="">
+            <!-- Main heading -->
+            <h1 class="Welcome">Welcome to Glasgow International College</h1>
+            <!-- Subheading explaining the purpose of the platform -->
+            <h3 class="text1">Welcome to the GIC Student Progress Platform. This platform aims to assess and collect data on students' progress at GIC.</h3>
+            <!-- Subheading providing navigation instructions -->
+            <h3 class="text2">You can navigate through the Information and Data Collection pages using the links above.</h3>
+        </div>     
+    </div>
+</body>
+<!-- Footer section containing copyright information -->
+<footer>&copy; 2024 GIC Student Progress Platform</footer>
+</html>

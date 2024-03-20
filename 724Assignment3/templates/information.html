@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Page</title>
+    <!-- Link to normalize.css for cross-browser consistency -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <!-- Link to my_css.css file for custom styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing the Alfa Slab One font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Main container for the page content -->
+    <div class="container">
+        <!-- Box for the logo -->
+        <div class="box box-one">
+            <!-- Logo image -->
+            <a href="/welcome"><img class="logo" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt=""></a>
+        </div> 
+        <!-- Box for navigation links -->
+        <div class="box box-two">
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <!-- Link to the Home page -->
+                    <li><a href="/welcome">Home Page</a></li>
+                    <!-- Link to the Data Collection page -->
+                    <li><a href="/data_collection">Data Collection Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Main content section -->
+    <main>
+        <!-- Section explaining the purpose of data collection -->
+        <section>
+            <!-- Heading -->
+            <h2>Purpose of Data Collection</h2>
+            <!-- Paragraph describing the purpose -->
+            <p>The data collected on student progress at GIC is vital for assessing and improving the academic experience. By gathering feedback and analyzing performance, we aim to enhance learning outcomes and support students throughout their journey at GIC.</p>
+        </section>
+        <!-- Section listing the benefits of data collection -->
+        <section>
+            <!-- Heading -->
+            <h2>Benefits</h2>
+            <!-- Unordered list of benefits -->
+            <ul>
+                <li>Identify areas for improvement in courses and academic support services.</li>
+                <li>Enhance teaching methods and curriculum based on student feedback.</li>
+                <li>Provide personalized assistance to students based on their needs and challenges.</li>
+                <li>Contribute to the overall improvement of the student experience at GIC.</li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer section containing copyright information -->
+    <footer>
+        <p>&copy; 2024 GIC Student Progress Platform</p>
+    </footer>
+</body>
+</html>
